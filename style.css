@@ -1,0 +1,46 @@
+:root{
+   --white:#fff;
+   --text-color:#000000;
+   --text-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+*{
+    background-color: var(--white);
+    color: var(--text-color, #212121);
+    color:var(--text-color, #757575)
+    
+}
+a[title]{
+    color:#757575
+}
+.header{
+    font-size: 16px;
+}
+a[title]{
+    width: 145;
+    height: 31;
+}
+h1 {
+    color: #fff;
+    background-color: #2F303A;
+    text-transform: uppercase;
+}
+section[title]{
+    background-color: #2F303A;
+}
+button {
+    color: #fff;
+    background-color: #2196F3;
+    border: #2196F3;
+}
+ footer{
+    background-color: #2F303A;
+ }
+ 
