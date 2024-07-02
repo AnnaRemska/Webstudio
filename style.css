@@ -1,46 +1,211 @@
+
 :root{
-   --white:#fff;
-   --text-color:#000000;
-   --text-size: 16px;
-}
+    --white:#fff;
+    --text-color:#000000;
+    --text-size: 16px;
+    --button-color: #2196F3;
+    --logo-color: #000000;
+    --title-color: #212121;
+    --fotter-color: #2F303A;
+    --phone-color:#757575;
+    --header-color: #ECECEC;
+    --team-color:#F5F4FA;
+    
+ }
+/*видалення підкреслення  тексту*/
 a{
     text-decoration: none;
 }
-
 ul{
-    list-style: none;
+    list-style-type: none;
+}
+/* Логотип */
+.header-logo {
+    color: var(--button-color);
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.39;
+    letter-spacing: 0.78px;
 }
 
-*{
-    background-color: var(--white);
-    color: var(--text-color, #212121);
-    color:var(--text-color, #757575)
-    
+.header-link {
+    color: var(--logo-color);
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.39;
+    letter-spacing: 0.78px;
 }
-a[title]{
-    color:#757575
-}
+
 .header{
-    font-size: 16px;
+    background-color: var(--white);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px var(--header-color) solid;
 }
-a[title]{
-    width: 145;
-    height: 31;
+          /*Шапка*/
+.heading-link{
+    color: var(--phone-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
 }
-h1 {
-    color: #fff;
-    background-color: #2F303A;
-    text-transform: uppercase;
+.heading-link:hover , :focus {
+    color: var(--button-color);
 }
-section[title]{
-    background-color: #2F303A;
+            /* Навігація */
+.nav-link {
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
 }
-button {
-    color: #fff;
-    background-color: #2196F3;
-    border: #2196F3;
+
+.nav-link:hover, :focus {
+    color: var(--button-color);
 }
- footer{
-    background-color: #2F303A;
- }
  
+/*фон*/
+.solution{
+    background-color: var(--fotter-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+ h1{
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    text-align: center;
+ }
+.solution-button{
+    width: 216px;
+    height: 50px;
+    border: #2196F3;
+    border-radius: 4px;
+    background-color: var(--button-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.96px;
+    margin: 0 auto;
+    display: block;
+}
+.solution-button:hover:focus{
+    background-color: #51adf6;
+}
+
+        /*КОМАНДА*/
+.command{
+    background-color: var(--team-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}      
+.command-title{
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+.command-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.command-name{
+    color: var(--title-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.48px;
+}
+.command-profession{
+    color: var(--phone-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+    letter-spacing: 0.48px;
+    margin-top: 10px;
+}
+         /*НАША КОМАНДА*/
+.specialty{
+    background-color: #fff;
+    padding-top: 94px;
+    padding-bottom: 197px;
+}
+.specialty-title{
+    width: 270px;
+    color: var(--title-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.specialty-text{
+    width: 270px;
+    height: 72px;
+    color: var(--phone-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+
+
+  /*Підвал*/
+  .footer{
+    background-color: var(--fotter-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+.footer-logo{
+    color: var(--button-color);
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.39;
+    letter-spacing: 0.78px;
+}
+.footer-link{
+    color: var(--white);
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.39;
+    letter-spacing: 0.78px;
+}
+ .footer-link:hover, :focus{
+    color: var(--button-color);
+ }
+
+.address-location{
+    color: var(--white);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .address-location:hover, :focus{
+    color: var(--button-color);
+}
+.address-link{
+    color: var(--phone-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+.address-link:hover, :focus{
+    color: var(--button-color);
+}
