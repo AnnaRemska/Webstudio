@@ -19,10 +19,30 @@ a{
 ul{
     list-style-type: none;
 }
-/* Логотип */
+
+
+.heading {
+    display: flex;
+    align-items: center;
+}
+.header-nav {
+    margin-left: 93px;
+    }
+
+.header{
+background-color: var(--white);
+padding-top: 24px;
+padding-bottom: 25px;
+border-bottom: 1px var(--header-color) solid;
+}
+
+.body {
+    font-family: "Roboto";
+}   
+    /* Логотип */ 
 .header-logo {
     color: var(--button-color);
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
     line-height: 1.39;
@@ -31,21 +51,23 @@ ul{
 
 .header-link {
     color: var(--logo-color);
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
     line-height: 1.39;
     letter-spacing: 0.78px;
 }
 
-.header{
-    background-color: var(--white);
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px var(--header-color) solid;
-}
+
           /*Шапка*/
+.header-list {
+display: flex;
+margin-left: auto;
+gap: 50px;
+}
+
 .heading-link{
+    font-family: "Roboto", sans-serif;
     color: var(--phone-color);
     font-size: 14px;
     font-weight: 500;
@@ -56,7 +78,14 @@ ul{
     color: var(--button-color);
 }
             /* Навігація */
+
+.nav-list {
+display: flex;
+gap: 50px;
+}
+
 .nav-link {
+    font-family: "Roboto", sans-serif;
     color: var(--title-color);
     font-size: 14px;
     font-weight: 500;
@@ -65,6 +94,9 @@ ul{
 }
 
 .nav-link:hover, :focus {
+    color: var(--button-color);
+}
+.address {
     color: var(--button-color);
 }
  
@@ -102,17 +134,61 @@ ul{
     background-color: #51adf6;
 }
 
+/*чим ми займаємось*/
+.function{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--white);
+    padding-top: 47px;
+    padding-bottom: 94px;
+    text-align: center;
+}
+.function-title {
+    font-family: "Roboto", sans-serif;
+    color: var(--title-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+.function-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
         /*КОМАНДА*/
 .command{
     background-color: var(--team-color);
     padding-top: 94px;
     padding-bottom: 94px;
+    text-align: center;
 }      
 .command-title{
     font-family: "Roboto", sans-serif;
+    color: var(--title-color);
     font-size: 36px;
     font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
 }
+.command-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.command-item {
+    width: 270px;
+    height: 368px;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--header-title);
+}
+.command-image {
+    width: 270px;
+    height: 260px;
+}
+
 .command-text{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -134,7 +210,8 @@ ul{
     letter-spacing: 0.48px;
     margin-top: 10px;
 }
-         /*НАША КОМАНДА*/
+/*НАШІ ПЕРЕВАГИ*/
+
 .specialty{
     background-color: #fff;
     padding-top: 94px;
@@ -163,13 +240,31 @@ ul{
 }
 
 
+
+.specialty-list{
+    display: flex;
+    gap: 30px;
+}
+.specialty-item{
+    width: 270px;
+    height: 98px;
+}
+
+
   /*Підвал*/
   .footer{
     background-color: var(--fotter-color);
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  
+  .footer-address {
+    width: 231px;
+    height: 81px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
 .footer-logo{
     color: var(--button-color);
     font-family: "Raleway";
@@ -190,21 +285,35 @@ ul{
     color: var(--button-color);
  }
 
+ .address-list{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
 .address-location{
+    width: 231px;
+    height: 21px;
     color: var(--white);
     font-family: "Roboto", sans-serif;
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
   }
   .address-location:hover, :focus{
     color: var(--button-color);
 }
 .address-link{
+    width: 136px;
+    height: 21px;
     color: var(--phone-color);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
 }
 .address-link:hover, :focus{
     color: var(--button-color);
