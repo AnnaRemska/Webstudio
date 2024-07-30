@@ -1,2 +1,0 @@
-# WebStudio_portfolio
- portfolio
