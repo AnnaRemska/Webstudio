@@ -26,11 +26,13 @@ h1, h2, h3, p, ul, img, li{
     margin: 0;
     padding: 0;
 }
-  
+img {
+    display: block;
+}
 
 
 .container{
-    width: 1600px;
+    width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -238,7 +240,60 @@ gap: 50px;
 .specialty{
     background-color: #fff;
     padding-top: 94px;
-    padding-bottom: 197px;
+    padding-bottom: 94px;
+}
+
+.specialty-item:nth-child(1)::before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-color);
+    border-radius: 4px;
+    background-image: url(../img/picture1.png);
+    display: inline-flex;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+.specialty-item:nth-child(2)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-color);
+    border-radius: 4px;
+    background-image: url(../img/picture2.png);
+    display: inline-flex;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+.specialty-item:nth-child(3)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-color);
+    border-radius: 4px;
+    background-image: url(../img/picture3.png);
+    display: inline-flex;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+}
+.specialty-item:nth-child(4)::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-color);
+    border-radius: 4px;
+    background-image: url(../img/picture4.png);
+    display: inline-flex;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
 }
 .specialty-title{
     width: 270px;
@@ -268,10 +323,10 @@ gap: 50px;
     display: flex;
     gap: 30px;
 }
-.specialty-item{
+/*.specialty-item{
     width: 270px;
     height: 98px;
-}
+}*/
 
 
   /*Підвал*/
